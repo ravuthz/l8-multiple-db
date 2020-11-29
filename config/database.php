@@ -91,6 +91,29 @@ return [
             'prefix_indexes' => true,
         ],
 
+        'connection2' => [
+            'driver' => 'pgsql',
+            'url' => env('DATABASE_URL_2'),
+            'host' => env('DB_HOST_2', '127.0.0.1'),
+            'port' => env('DB_PORT_2', '5432'),
+            'database' => env('DB_DATABASE_2', 'forge'),
+            'username' => env('DB_USERNAME_2', 'forge'),
+            'password' => env('DB_PASSWORD_2', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'schema' => 'public',
+            'sslmode' => 'prefer',
+        ],
+
+        'connection3' => [
+            'driver' => 'sqlite',
+            'url' => env('DATABASE_URL_3'),
+            'database' => database_path(env('DB_DATABASE_3', 'database.sqlite')),
+            'prefix' => '',
+            'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
+        ],
+
     ],
 
     /*
