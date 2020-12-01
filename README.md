@@ -1,9 +1,13 @@
 # Laravel 8 - Multiple Database Connections
 
 
-### Create new Laravel project
+### Create new Laravel project or clone this project
 ```bash
 laravel new laravel
+
+git clone https://github.com/ravuthz/l8-multiple-db.git
+
+composer install
 ```
 
 ### Check and configure database connections in .env
